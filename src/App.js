@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button } from '@blueprintjs/core';
+import { Button,EditableText } from '@blueprintjs/core';
 import './App.css';
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.website}</td>
+              <td><EditableText value={user.email}/></td>
+              <td><EditableText value={user.website}/></td>
               <td>
                 <Button intent='primary'>Update</Button>
                 <Button intent='danger'>Delete</Button>
