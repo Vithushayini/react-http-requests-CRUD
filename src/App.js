@@ -108,6 +108,7 @@ function App() {
               <td><EditableText onChange={value=>onChangeHandler(user.id,'website',value)} value={user.website}/></td>
               <td>
                 <Button intent='primary' onClick={()=>updateUser(user.id)}>Update</Button>
+                &nbsp;
                 <Button intent='danger' onClick={()=>deleteUser(user.id)}>Delete</Button>
               </td>
             </tr>)}
